@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5</title>
+    <style>
+         span {
+          margin-top: 150px;
+        width: 100px;
+        height: 100px;
+        display: inline-block;          
+        box-shadow: 2px 2px 3px rgba(0,0,0,.4);
+        margin-left: 15px;
+      }
+      .a1{
+        -webkit-animation: down 5s infinite ease-in-out;
+        animation: down 5s infinite ease-in-out;
+        background: deeppink;
+      }
+      .a2{
+        -webkit-animation: down 3s infinite ease-in-out;
+        animation: down 3s infinite ease-in-out;
+        background: saddlebrown;
+      }
+      .a3{
+        -webkit-animation: down 2s infinite ease-in-out;
+        animation: down 2s infinite ease-in-out;
+        background: blue;
+      }
+      .a4{
+        -webkit-animation: down 6s infinite ease-in-out;
+        animation: down 6s infinite ease-in-out;
+        background: green;
+      }
+      .a5{
+        -webkit-animation: down 4s infinite ease-in-out;
+        animation: down 4s infinite ease-in-out;
+        background: gold;
+      }
+        @keyframes down {
+        to {
+          transform: translate(0%) ;
+          border-radius: 50%;
+        }
+        10%{
+            border-radius:5%;
+        }
+        20%{
+            border-radius:10%; 
+        }
+        30%{
+            border-radius:15%;
+        }
+        40%{
+            border-radius:20%;
+        }
+        50%{
+            border-radius:25%;
+        }
+        60%{
+            border-radius:30%;
+        }
+        70%{
+            border-radius:35%;
+        }
+        80%{
+            border-radius:40%;
+        }
+        90%{
+            border-radius:45%;
+        }
+       from {
+          transform: translate(0%, -150%);
+        }
+      }
+    </style>
+</head>
+
+<body>
+    <div>
+        <span class="a1"></span>
+        <span class="a2"></span>
+        <span class="a3"></span>
+        <span class="a4"></span>
+        <span class="a5"></span>
+    </div>
+</body>
+
+</html>

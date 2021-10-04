@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4</title>
+    <style>
+        body {
+            margin: 0;
+            background: #F4EDE5;
+        }
+        div {
+        width: 200px;
+        height: 200px;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      }
+      span {
+          background: aqua;
+        display: block;
+        position: absolute;
+        width: 50%;
+        height: 50%;        
+        box-shadow: 2px 2px 3px rgba(0,0,0,.4);
+        -webkit-animation: run 2s infinite ease-in-out;
+        animation: run 2s infinite ease-in-out;
+      }
+
+        @-webkit-keyframes run {
+        0% {
+          transform: translate(0%);
+          background: aqua;
+        }
+        25% {
+          transform: translate(150%) ;
+          background: red;
+        }
+        50% {
+          transform: translate(150%, 150%);
+          background: blue;
+        }
+        75% {
+          transform: translate(0%, 150%) ;
+          background: aqua;
+        }
+      }
+      @keyframes run {
+        0% {
+          transform: translate(0%);
+          background: aqua;
+        }
+        25% {
+          transform: translate(150%);
+          background: red;
+        }
+        50% {
+          transform: translate(150%, 150%);
+          background: blue;
+        }
+        75% {
+          transform: translate(0%, 150%) ;
+          background: violet;
+        }
+      }
+    </style>
+</head>
+
+<body>
+    <div>
+        <span></span>
+    </div>
+</body>
+
+</html>
